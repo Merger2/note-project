@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+</head>
+
+<body class="bg-slate-900 text-slate-200">
+  <main class="w-screen min-h-screen flex justify-center">
+    <div class="w-[480px] h-full bg-slate-700 p-4 mt-4">
+      <h1 class="font-semibold text-lg text-center text-slate-200 ">Simple Note</h1>
+      <form id="formInput" class="flex flex-col gap-4 mt-8">
+        <h2 class="text-slate-200">NOTE</h2>
+        <textarea id="catatan" class="min-h-36 p-4 rounded-md bg-slate-600 text-slate-200" required>
+
+        </textarea>
+        <button type="submit" class="bg-cyan-600 text-white py-3 px-6 rounded-full hover:bg-cyan-800">
+          Kirim
+      </button>
+      </form>
+      <div id="notesContainer" class="mt-8 space-y-4 bg text-black text"></div>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
